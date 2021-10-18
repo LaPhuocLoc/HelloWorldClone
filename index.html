@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/slow-scroll.js"></script>
+    <script src="./assets/js/sticky-nav.js"></script>
+    <title>My Foodie</title>
+</head>
+
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="grid">
+                <div class="header__navbar">
+                    <div class="header__logo">
+                        <a href="" class="header__logo-link">MyFoodie</a>
+                    </div>
+
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item"><a href="" class="header__navbar-item-link">Home</a></li>
+                        <li class="header__navbar-item"><a href="" class="header__navbar-item-link">Travel</a></li>
+                        <li class="header__navbar-item"><a href="" class="header__navbar-item-link">Recipes</a></li>
+                        <li class="header__navbar-item"><a href="" class="header__navbar-item-link">About us</a></li>
+                        <li class="header__navbar-item"><a href="" class="header__navbar-item-link">Mini game</a></li>
+
+                        <li class="header__navbar-item"><a href="" class="header__navbar-icon-link"><i
+                                    class="fab fa-youtube"></i></a></li>
+                        <li class="header__navbar-item"><a href="" class="header__navbar-icon-link"><i
+                                    class="fab fa-twitter"></i></a></li>
+                        <li class="header__navbar-item"><a href="" class="header__navbar-icon-link"><i
+                                    class="fab fa-facebook-f"></i></a></li>
+                        <li class="header__navbar-item"><a href="" class="header__navbar-icon-link"><i
+                                    class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <!-- Banner -->
+            <div class="banner">
+                <div class="banner-wrapper">
+                    <h1 class="banner__heading" 
+                    data-aos="fade-right"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="true"
+                    >
+                        It is even better than an expensive cookery book is insane
+                    </h1>
+
+                    <p class="banner__sub-text"
+                    data-aos="fade-left"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="true"
+                    >
+                        Learn how to make your favorite restaurant’s dishes
+                    </p>
+
+                    <div class="search"
+                    data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="true"
+                    >
+                        <input type="text" class="search-input" id="search" placeholder="I want to make...">
+                        <!-- Search button -->
+                        <div class="search__btn-wrapper">
+                            <button class="search__btn">
+                                <i class="fas fa-search search__btn-icon"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Video BG -->
+                <!-- <video id="background-video" autoplay loop muted>
+                    <source src="./assets/video/test22.mp4" type="video/mp4">
+                </video> -->
+            </div>
+            <!-- Introduce -->
+            <div class="container primary-bg"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            >
+                <div class="grid grid--padding-120">
+                    <!-- Introduce Heading -->
+                    <h1 class="intro-heading">What We Can Offer</h1>
+                    <div class="intro-divider">
+                        <span class="intro-divider__sub">from our hearts</span>
+                    </div>
+                    <!-- Introduce Item -->
+                    <div class="grid__row">
+                        <div class="grid__column-3"
+                        data-aos="slide-left"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="true"
+                        >
+                            <div class="intro">
+                                <div class="intro__img-wrapper">
+                                    <img src="./assets/img/index-料理.jpg" alt="">
+                                </div>
+
+                                <div class="intro__detail">
+                                    <span class="intro__detail-heading">
+                                        <strong>料理</strong>
+                                    </span>
+                                    <p class="intro__detail-text">
+                                        日本各地方とベトナムの郷土料理を紹介致します。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-3"
+                        data-aos="slide-up"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="true"
+                        >
+                            <div class="intro">
+                                <div class="intro__img-wrapper">
+                                    <img src="./assets/img/index-旅行.jpg" alt="">
+                                </div>
+
+                                <div class="intro__detail">
+                                    <span class="intro__detail-heading">
+                                        <strong>旅行</strong>
+                                    </span>
+                                    <p class="intro__detail-text">
+                                        日本全土及びベトナムの人気スポットを紹介致します。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-3"
+                        data-aos="slide-right"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="true"
+                        >
+                            <div class="intro">
+                                <div class="intro__img-wrapper">
+                                    <img src="./assets/img/index-その他.jpg" alt="">
+                                </div>
+
+                                <div class="intro__detail">
+                                    <span class="intro__detail-heading">
+                                        <strong>その他</strong>
+                                    </span>
+                                    <p class="intro__detail-text">
+                                        何を紹介したらいいのか考え中だがとりあえず猫の写真を載せます。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- Section -->
+            <div class="container  ">
+                <div class="grid__full-width grid--padding-top-100 ">
+                    <div class="section ">
+                        <div class="section__img section__img--box-shadow"
+                            style="background: url(./assets/img/welcome.jpg) no-repeat center/cover;"
+                            data-aos="slide-right"
+                            data-aos-offset="200"
+                            data-aos-delay="50"
+                            data-aos-duration="1000"
+                            data-aos-easing="ease-in-out"
+                            data-aos-mirror="true"
+                            data-aos-once="true"
+                            >
+                        </div>
+                        <div class="section__info">
+                            <div class="info-grid">
+                                <h3 class="section__info-heading">
+                                    グルメコーナー
+                                </h3>
+                                <p class="section__info-sub">
+                                    各地の郷土料理をご紹介
+                                </p>
+                                <p class="section__info-text">
+                                    日本とベトナムの郷土料理を厳選。その地域だからこその素材や調理方法を使い、地域おこしにも使われているご当地グルメ。
+                                </p>
+                                <a href="#" class="section__info-link"> もっと表示
+                                    <i class="fas fa-arrow-right section__info-link-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__full-width grid--padding-top-100 grid--padding-bot-100 ">
+                    <div class="section">
+                        <div class="section__info">
+                            <div class="info-grid">
+                                <h3 class="section__info-heading">
+                                    国内の人気スポット
+                                </h3>
+                                <p class="section__info-sub">
+                                    北海道から沖縄
+                                </p>
+                                <p class="section__info-text">
+                                    北海道、富山、新潟、石川、山梨、沖縄。日本の秘境から広く知られる観光スポット。
+                                </p>
+                                <a href="" class="section__info-link">もっと表示
+                                    <i class="fas fa-arrow-right section__info-link-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="section__img section__img--box-shadow-reverse"
+                            style="background: url(./assets/img/travel.jpg) no-repeat center/cover;"
+                            data-aos="slide-left"
+                            data-aos-offset="200"
+                            data-aos-delay="50"
+                            data-aos-duration="1000"
+                            data-aos-easing="ease-in-out"
+                            data-aos-mirror="true"
+                            data-aos-once="true"
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Introduce Member -->
+            <div class="container primary-bg"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            >
+                <div class="grid grid--padding-90-120">
+                    <!-- Introduce Heading -->
+                    <h1 class="intro-heading">Our Team</h1>
+                    <div class="intro-divider">
+                        <span class="intro-divider__sub">iz da bet</span>
+                    </div>
+                    <!-- Introduce Item -->
+                    <div class="grid__row">
+                        <div class="grid__column-4"
+                        data-aos="slide-right"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="true"
+                        >
+                            <div class="intro">
+                                <div class="intro__img-wrapper">
+                                    <img src="./assets/img/ice-cream.png" alt="">
+                                </div>
+
+                                <div class="intro__detail">
+                                    <span class="intro__detail-heading">
+                                        <strong>ラフォックロック</strong>
+                                    </span>
+                                    <p class="intro__detail-text">
+                                        ひとこと
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-4"
+                        data-aos="slide-up"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="true"
+                        >
+                            <div class="intro">
+                                <div class="intro__img-wrapper">
+                                    <img src="./assets/img/ice-cream.png" alt="">
+                                </div>
+
+                                <div class="intro__detail">
+                                    <span class="intro__detail-heading">
+                                        <strong>孫号升</strong>
+                                    </span>
+                                    <p class="intro__detail-text">
+                                        ひとこと
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-4"
+                        data-aos="slide-down"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="true"
+                        >
+                            <div class="intro">
+                                <div class="intro__img-wrapper">
+                                    <img src="./assets/img/ice-cream.png" alt="">
+                                </div>
+
+                                <div class="intro__detail">
+                                    <span class="intro__detail-heading">
+                                        <strong>アウアンチュ</strong>
+                                    </span>
+                                    <p class="intro__detail-text">
+                                        ひとこと
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-4"
+                        data-aos="slide-left"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="true"
+                        >
+                            <div class="intro">
+                                <div class="intro__img-wrapper">
+                                    <img src="./assets/img/ice-cream.png" alt="">
+                                </div>
+
+                                <div class="intro__detail">
+                                    <span class="intro__detail-heading">
+                                        <strong>楊健琦</strong>
+                                    </span>
+                                    <p class="intro__detail-text">
+                                        ひとこと
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="grid sign-up">
+                    <h1 class="sign-up__heading">Never Miss a Recipe!</h1>
+                    <p class="sign-up__subtitle">Join thousands of MyFoodie subscribers and get our best recipes
+                        delivered each week!</p>
+                    <div class="sign-up__input-wrapper">
+                        <input type="text" class="sign-up__input-email" placeholder="Enter your email address">
+                        <input type="submit" value="subscribe" class="sign-up__input-submit">
+                    </div>
+                    <label class="sign-up__term">
+                        <input type="checkbox" class="sign-up__term-input">
+                        <p class="sign-up__term-text">I have read and agree to the
+                            <a href="" class="sign-up__term-link">terms & conditions</a>
+                        </p>
+                    </label>
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="gallery__bg" style="background: url(./assets/img/gallery-1.jpg)no-repeat center/cover;">
+                </div>
+                <div class="gallery__bg" style="background: url(./assets/img/gallery-2.jpg)no-repeat center/cover;">
+                </div>
+                <div class="gallery__bg" style="background: url(./assets/img/gallery-3.jpg)no-repeat center/cover;">
+                </div>
+                <div class="gallery__bg" style="background: url(./assets/img/gallery-4.jpg)no-repeat center/cover;">
+                </div>
+                <div class="gallery__bg" style="background: url(./assets/img/gallery-5.jpg)no-repeat center/cover;">
+                </div>
+                <div class="gallery__bg" style="background: url(./assets/img/gallery-6.jpg)no-repeat center/cover;">
+                </div>
+            </div>
+            <div class="container bg-333">
+                <div class="grid footer__bottom">
+                    <p class="footer__powered">
+                        Copyright ©2021 All rights reserved by <span>HelloWorldGroup</span>
+                    </p>
+                    <div class="footer__social">
+                        <a href="#"> <i class="fab fa-facebook    "></i> </a>
+                        <a href="#"> <i class="fab fa-twitch    "></i> </a>
+                        <a href="#"> <i class="fab fa-youtube    "></i> </a>
+                        <a href="#"> <i class="fab fa-instagram    "></i> </a>
+                        <a href="#"> <i class="fab fa-discord    "></i> </a>
+                        <a href="#"> <i class="fab fa-reddit    "></i> </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
