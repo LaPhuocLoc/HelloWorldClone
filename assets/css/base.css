@@ -22,7 +22,7 @@ a:hover {
 }
 
 a:hover {
-    color: var(--primary-color);
+    color: var(--primary-color)!important;
 }
 
 ul,
@@ -58,6 +58,7 @@ body {
 h1 {
     font-size: 3rem;
     font-weight: 900;
+    text-transform: uppercase;
     font-family: var(--secondary-font);
     margin-bottom: var(--secondary-color);
 }
