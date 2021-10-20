@@ -1,13 +1,15 @@
 .navigation-wrapper {
-    position:fixed;
+    position: fixed;
     top: 0;
     left: 0;
-    width:100%;
+    width: 100%;
     background: transparent;
-    padding: 1.5rem 6.25rem;
+    padding: 1.5rem 0;
     transition: .3s ease-out;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1000;
 }
+
 .navbar-brand {
     font-size: 1.875rem;
     font-weight: 700;
@@ -16,36 +18,54 @@
     letter-spacing: 2px;
     transition: .3s ease-out;
 }
+
+
+.navbar-toggler {
+    border: 1px solid var(--white-color);
+}
 .navbar-toggler:focus {
     outline: unset;
-    border: unset;
+    box-shadow: none;
 }
+
 .navbar-toggler-icon {
-    font-size: 1.625rem
+    font-size: 1.5rem !important;
+    line-height: 2.25rem;
+    vertical-align: middle;
 }
-.navbar-nav li {
+
+.navbar-nav .nav-item {
     margin-left: .375rem;
 }
-.navbar-nav li a {
+
+.nav-link {
     font-size: .9375rem;
     color: var(--white-color);
     transition: .3s ease-out;
     text-shadow: 5px 5px 10px #000;
 }
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-color);
+}
 .nav-item:nth-child(n+6) .nav-link {
     padding: .5rem .375rem;
 }
-.navbar-toggler-icon {
-    font-size: 1.125rem;
-}
+
 .sticky {
     background-color: var(--white-color);
-    padding: .75rem 6.25rem;
+    padding: .75rem 0;
 }
-.sticky a,
-.sticky li a {
-    color: var(--black-color)!important;
+
+.sticky .navbar-brand,
+.sticky .nav-link {
+    color: var(--black-color) !important;
 }
+.sticky .nav-link:hover,
+.sticky .nav-link.active {
+    color: var(--primary-color);
+}
+
 /* Top banner CSS */
 .top-banner {
     background: url(../img/top-banner.jpg) no-repeat;
@@ -53,9 +73,40 @@
     background-size: cover;
     height: 100vh;
 }
-.top-banner h1,h2 {
+
+.top-banner h1,
+h2 {
     color: var(--white-color);
 }
+
 .top-banner h1 span {
-    color: var(--primary-color  );
+    color: var(--primary-color);
+}
+.top-banner .input-group {
+    background: transparent;
+    border: 2px solid var(--white-color);
+    border-radius: 1.875rem!important;
+    height: 60px;
+    overflow: hidden;
+}
+.top-banner .input-group input {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 2rem;
+    caret-color: var(--white-color);
+    color: var(--white-color);
+}
+.top-banner .input-group input::placeholder {
+    color: var(--white-color);
+}
+.top-banner .input-group input:focus {
+    box-shadow: none;
+}
+.top-banner .input-group .main-btn {
+    border: none;
+    box-shadow: none;
+}
+.top-banner .input-group .main-btn:hover {
+    border-left: 1px solid var(--white-color);
 }
