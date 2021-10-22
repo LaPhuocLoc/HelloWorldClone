@@ -22,7 +22,7 @@ a:hover {
 }
 
 a:hover {
-    color: var(--primary-color)!important;
+    color: var(--primary-color) !important;
 }
 
 ul,
@@ -52,6 +52,11 @@ body {
     font-size: 100%;
     font-weight: 400;
     line-height: 1rem;
+}
+
+html,
+body {
+    overflow-x: hidden;
 }
 
 /* Custom CSS Design */
@@ -97,6 +102,10 @@ p {
     line-height: 1.75rem;
 }
 
+.section-padding {
+    padding: 100px 0 !important;
+}
+
 .main-btn {
     display: inline-block;
     padding: 0.625rem 1.875rem;
@@ -113,6 +122,7 @@ p {
     -moz-transition: all .4s ease-out 0s;
     transition: all .4s ease-out 0s;
 }
+
 .white-btn {
     padding: .625rem 1.875rem;
     line-height: 1.5625rem;
@@ -128,12 +138,104 @@ p {
     -moz-transition: all .4s ease-out 0s;
     transition: all .4s ease-out 0s;
 }
+
 .main-btn:hover {
     background-color: transparent;
     color: var(--primary-color);
 }
+
 .white-btn:hover {
-    background-color:transparent;
+    background-color: transparent;
     color: var(--primary-color);
     border-color: var(--primary-color);
 }
+
+.more-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    color: var(--text-color);
+    padding: 16px 22px;
+    margin: 0 auto;
+    transition: all .3s ease;
+    z-index: 1;
+}
+
+.more-btn:hover {
+    color: var(--white-color) !important;
+}
+
+.more-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 24px;
+    width: 48px;
+    height: 48px;
+    transition: all .3s ease;
+    background: rgba(83, 143, 45, 0.5);
+    z-index: -1;
+}
+
+.more-btn:hover::before {
+    width: 100%;
+    background: rgba(83, 143, 45, 1);
+}
+
+.more-btn:active {
+    transform: scale(.96);
+}
+
+.more-btn-icon {
+    color: var(--text-color);
+    font-size: 1rem;
+    margin-left: 8px;
+    transition: all .3s ease
+}
+
+.more-btn:hover .more-btn-icon {
+    color: var(--white-color);
+}
+
+.back-top-btn {
+    background-color: var(--third-color);
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    color: var(--white-color);
+    box-shadow: 0 0 3px #555!important;
+    transition: all .4s ease-out 0s;
+    z-index: 999999;
+    display:none;
+}
+.back-top-btn:hover {
+    color: var(--primary-color);
+}
+@-webkit-keyframes fadeIn {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-moz-keyframes fadeIn {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-o-keyframes fadeIn {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes fadeIn {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
